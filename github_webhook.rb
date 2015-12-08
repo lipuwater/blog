@@ -10,7 +10,7 @@ post '/push' do
   verify_signature(payload_body)
   push = JSON.parse(payload_body)
   puts "Received JSON: #{push.inspect}"
-  system('auto_update.sh') if 'refs/heads/master' == push['ref']
+  system('./auto_update.sh') if 'refs/heads/master' == push['ref']
 end
 
 get '*' do
