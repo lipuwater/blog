@@ -95,7 +95,7 @@ ruby cal.rb # => "sum 1 and 3 is 4"
 
 #### Todo
 
-- [ ] [write a http-parser ffi](https://github.com/nodejs/http-parser)
+* [write a http-parser ffi](https://github.com/nodejs/http-parser)
 
 #### [ruby-ffi demo repo](https://github.com/FlowerWrong/ffi-demos)
 
