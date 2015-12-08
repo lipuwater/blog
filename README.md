@@ -19,7 +19,7 @@ You can use [disqus comment plugin](https://disqus.com/) by add `comments: true`
 
 ###### Tags
 
-You can use tags by add 'tags: [github, github-pages, jekyll]' to post header.
+You can use tags by add `tags: [github, github-pages, jekyll]` to post header.
 
 ###### Category
 
