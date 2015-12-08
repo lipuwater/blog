@@ -5,6 +5,8 @@ date: 2015-12-08 14:40:42 +0800
 category: ruby
 tags: [ruby, ruby-ffi, c, ffi]
 comments: true
+author: flowerwrong
+avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
 
 It is a demo use ruby-ffi to call c code. Only tested it on ubuntu(15.04). The `libcal` just calculate the sum of two integer number. You can see all of the code [here](https://github.com/FlowerWrong/ffi-demos).
