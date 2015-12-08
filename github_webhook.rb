@@ -4,6 +4,7 @@ require 'json'
 
 set :bind, '0.0.0.0'
 set :port, 8089
+set :server, 'thin'
 
 post '/push' do
   request.body.rewind
