@@ -1,3 +1,4 @@
+# Fork from https://github.com/gnailuy/githook
 require 'sinatra'
 require 'json'
 
