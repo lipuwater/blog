@@ -46,11 +46,9 @@ avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 
 You’ll find this post in your `_posts` directory.
 
-```ruby
 def bye_bye(name)
   p "Bye bye, #{name}"
 end
-```
 ```
 
 #### Deploy
