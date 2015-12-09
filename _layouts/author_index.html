@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1 class="author">{{ page.title }} <a href="javascript:window.history.back();">&laquo;</a></h1>
+<ul class="posts">
+  {% for p in site.posts do %}
+    {% if p.author == page.author %}
+	    <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+	    <div>{{ p.date | date_to_html_string }}</div>
+	    <div class="authors">Filed under: {{ p.author }}</div>
+    {% endif %}
+  {% endfor %}
+</ul>
