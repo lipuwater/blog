@@ -2,7 +2,7 @@
 layout: post
 title: "Simple ruby-ffi Demo"
 date: 2015-12-08 14:40:42 +0800
-category: ruby
+category: tech
 tags: [ruby, ruby-ffi, c, ffi]
 comments: true
 author: flowerwrong
