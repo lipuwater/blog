@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple ruby-ffi Demo"
-date: 2015-12-08 14:40:42 +0800
+date: 2015-12-08
 category: tech
 tags: [ruby, ruby-ffi, c, ffi]
 comments: true
@@ -94,6 +94,13 @@ p "sum 1 and 3 is #{total}"
 ```bash
 ruby cal.rb # => "sum 1 and 3 is 4"
 ```
+
+#### Other ways to call c/c++ code in ruby
+
+* [rubyinline](http://www.zenspider.com/ZSS/Products/RubyInline/)
+* [rice](https://github.com/jasonroelofs/rice)
+* [swig](http://www.swig.org/translations/chinese/index.html)
+* [use `mkmf` and `ruby.h` in ruby way](https://github.com/ruby/ruby/blob/trunk/doc/extension.rdoc)
 
 #### Todo
 

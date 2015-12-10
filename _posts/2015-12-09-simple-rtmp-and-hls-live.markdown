@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple RTMP and HLS Live"
-date: 2015-12-09 14:40:42 +0800
+date: 2015-12-09
 category: tech
 tags: [c++, rtmp, hls, srs, live]
 comments: true
