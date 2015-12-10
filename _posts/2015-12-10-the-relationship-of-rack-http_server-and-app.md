@@ -127,3 +127,12 @@ end
 可以看出里面比较重要的是`@run`(应用名称) 和 `@use`(middleware数组) 两个实例变量.
 
 #### 待续
+
+
+#### Reference
+
+* [ruby-c-extension-book](https://github.com/wusuopu/ruby-c-extension-book)
+* [eventmachine wiki](https://github.com/eventmachine/eventmachine/wiki)
+* [sinatra](https://github.com/bmizerany/sinatra)
+* [thin](https://github.com/macournoyer/thin)
+* [rack](https://github.com/rack/rack)
