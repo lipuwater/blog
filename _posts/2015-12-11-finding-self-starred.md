@@ -17,15 +17,15 @@ Python 一向是 Web Crawling 实践中比较热门的语言，这次我们尝�
 请求某个 Github 账户的 Starred Repositories 页面，通过 BeautifulSoup 解析网页，并通过 **CSS Selector** 语法来定位页面中的 `repo` 元素，分析出所有是用户自身 Star 的仓库。
 
 ## TODO
-- [ ] 多线程加速
+- 多线程加速
 
 ## Usage
-```
+```bash
 python2 finding_self_starred.py ACCOUNT_NAME
 ```
 
 ## 实现
-```
+```python
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import argparse
