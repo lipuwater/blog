@@ -296,7 +296,7 @@ end
 ```
 
 通过`select_backend`来决定服务器套接字类型，我们关注的是`Backends::TcpServer.new(host, port)`，查看`Backends::TcpServer`和`Backends::Base`的代码可以发现`thin`直接使用了`eventmachine`来启动tcp服务器。
-并且默认是但线程的，也可以开启多线程，但注意线程安全问题。启动服务器的时候，`eventmachine`有自己的规则。`EventMachine.start_server(@host, @port, Connection, &method(:initialize_connection))`可以看出，
+并且默认是单线程的，也可以开启多线程，但注意线程安全问题。启动服务器的时候，`eventmachine`有自己的规则。`EventMachine.start_server(@host, @port, Connection, &method(:initialize_connection))`可以看出，
 `thin`使用了自己的`Connection`处理请求
 
 ```ruby
