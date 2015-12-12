@@ -15,6 +15,7 @@ avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 * `-X Method`: 使用某http方法，例如`-X POST`, `-X PUT` [GET POST DELETE PUT HEAD PATCH...]
 * `-H "key:value"`: 添加请求头信息
 * `-d "key=value&key2=value2"`: 添加http payload
+* `-F, --form <name=content>`: 强制POST的时候使用`Content-Type multipart/form-data`，并加上上传表单的内容
 * `-v`: `--verbose` 显示执行过程中的详细信息
 
 
@@ -48,4 +49,10 @@ curl -X GET -H "Content-Type:application/vnd.api+json" -H "Accept:application/vn
 curl -X PUT -d "title='updated title'" -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
 curl -X PATCH -d "title='updated title'" -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
 curl -i -v -X DELETE -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles/1"
+```
+
+### 发送文件
+
+```bash
+curl -X POST -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" -F "picture=@/logo.png" "http://127.0.0.1/uploader" | python -m json.tool
 ```
