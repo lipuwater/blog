@@ -36,16 +36,16 @@ command1 | command2 paramater1 | command3 parameter1 - parameter2 | command4
 使用重定向主要是为了进行`json`字符串的格式化
 
 ```bash
-curl -X GET -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json" "http://127.0.0.1/articles.json" | python -m json.tool
+curl -X GET -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles.json" | python -m json.tool
 ```
 
 ## Demo
 
 ```bash
-curl -X GET -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json" "http://127.0.0.1/articles?page=1&per_page=10" | python -m json.tool
-curl -X POST -d "title:'new title'&body='new body'" -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json" "http://127.0.0.1/articles" | python -m json.tool
-curl -X GET -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
-curl -X PUT -d "title:'updated title'" -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
-curl -X PATCH -d "title:'updated title'" -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
-curl -i -v -X DELETE -H "Content-Type: application/vnd.api+json" -H "Accept: application/vnd.api+json" "http://127.0.0.1/articles/1"
+curl -X GET -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles?page=1&per_page=10" | python -m json.tool
+curl -X POST -d "title='new title'&body='new body'" -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles" | python -m json.tool
+curl -X GET -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
+curl -X PUT -d "title='updated title'" -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
+curl -X PATCH -d "title='updated title'" -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles/1" | python -m json.tool
+curl -i -v -X DELETE -H "Content-Type:application/vnd.api+json" -H "Accept:application/vnd.api+json" "http://127.0.0.1/articles/1"
 ```
