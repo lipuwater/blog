@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "curl for api"
-date: 2015-12-10
+date: 2015-12-12
 category: tech
 tags: [ruby, curl]
 comments: true

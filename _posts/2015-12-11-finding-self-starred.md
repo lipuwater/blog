@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Finding one's Github own repositories which are self-starred"
-date: 2015-12-10
+date: 2015-12-11
 category: tech
 tags: [python, web_crawling]
 comments: true
