@@ -14,10 +14,15 @@ Requirement:
 ```shell
 git clone https://github.com/onecampus/blog
 cd blog
+
+# use jekyll built-in server
 jekyll serve
 
-# Runing in production mode
-JEKYLL_ENV=production jekyll serve
+# build. You can then use any server to serve static files in _site directory
+jekyll build
+
+# build in production mode
+JEKYLL_ENV=production jekyll build
 ```
 
 For more usage of `jekyll`, refer to [Jekyll Documentation](http://jekyllrb.com/docs/home/).
