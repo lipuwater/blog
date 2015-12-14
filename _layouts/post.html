@@ -20,7 +20,11 @@
     </div>
   </article>
 
-  {% include disqus.html %}
+  {% if jekyll.environment == "production" %}
+    {% unless page.disable_comments %>
+      {% include disqus.html %}
+    {% endunless %}
+  {% endif %}
 
 </aside>
 

@@ -1,24 +1,24 @@
 flowerwrong:
-  github: 'https://github.com/FlowerWrong'
-  twitter: 'https://twitter.com/Dennis69249870'
   avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
-  zhihu: 'https://www.zhihu.com/people/dennis-yang'
-  lofter: 'http://www.lofter.com'
   job: 'Github Porter'
   intro: 'The rest of the world is wrong...and we are right...'
+  github: 'https://github.com/FlowerWrong'
+  twitter: 'https://twitter.com/Dennis69249870'
+  zhihu: 'https://www.zhihu.com/people/dennis-yang'
+  lofter: 'http://www.lofter.com'
 
 nekocode:
-  github: 'https://github.com/nekocode'
   avatar: 'https://avatars1.githubusercontent.com/u/4783781?v=3&s=460'
-  zhihu: 'https://www.zhihu.com/people/dennis-yang'
-  lofter: 'http://www.lofter.com'
   job: 'Android'
   intro: 'I am very handsome.'
-
-Jim Zach:
-  twitter: 'https://twitter.com/'
-  avatar: '/assets/avatars/jinze.png'
+  github: 'https://github.com/nekocode'
   zhihu: 'https://www.zhihu.com/people/dennis-yang'
   lofter: 'http://www.lofter.com'
+
+Jim Zach:
+  avatar: '/assets/avatars/jinze.png'
   job: 'Product Manager'
   intro: 'I am very handsome too.'
+  twitter: 'https://twitter.com/'
+  zhihu: 'https://www.zhihu.com/people/dennis-yang'
+  lofter: 'http://www.lofter.com'
