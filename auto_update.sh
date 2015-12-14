@@ -1,4 +1,4 @@
 #!/bin/bash
 
 git pull
-jekyll build
+JEKYLL_ENV=production jekyll build
