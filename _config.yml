@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: liveneeq-blog
+title: Liveneeq Blog
 email: it@liveneeq.com
 description: > # A blog of liveneeq.com.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -28,5 +28,31 @@ redcarpet:
     - strikethrough
     - fenced_code_blocks
 
+kramdown:
+  input: GFM
 
 timezone: 'Asia/Shanghai'
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+sass:
+  style: compressed
+  sass_dir: assets/css/scss
+
+exclude:
+  - template
+  - auto_update.sh
+  - github_webhook.rb
+  - config.ru
+  - README.md

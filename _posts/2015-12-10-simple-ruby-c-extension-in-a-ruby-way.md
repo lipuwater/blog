@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Simple Ruby C Extension in a Ruby Way"
 date: 2015-12-10
 category: tech
 tags: [ruby, c-extension, c]
-comments: true
 author: flowerwrong
 ---
 

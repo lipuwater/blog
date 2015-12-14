@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "jbuilder + to_json VS AMS"
 date: 2015-12-13
 category: tech
 tags: [ruby, rails, to_json, jbuilder, AMS]
-comments: true
 author: flowerwrong
 ---
 
