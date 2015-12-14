@@ -7,9 +7,10 @@ This is the blog of liveneeq tech team. Powered by [jekyyl](http://jekyllrb.com/
 1. fork
 2. clone
 3. `gem install jekyll`
-4. write post in `_posts` dir, the name like `2015-12-08-welcome-to-jekyll.markdown`
-5. `jekyll serve --trace`
-6. pull request
+4. write your info in `_data/authors.yml`
+5. write post in `_posts` dir, the name like `2015-12-08-welcome-to-jekyll.markdown`
+6. `jekyll serve --trace`
+7. pull request
 
 #### Note
 
