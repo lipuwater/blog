@@ -2,7 +2,7 @@
 
 Source code of [liveneeq's techblog](http://blog.liveneeq.com).
 
-It's powered by [Jekyyl](http://jekyllrb.com/).
+It's powered by [Jekyll](http://jekyllrb.com/).
 
 ## Running locally
 
