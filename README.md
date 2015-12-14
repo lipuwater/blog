@@ -8,8 +8,8 @@ This is the blog of liveneeq tech team. Powered by [jekyyl](http://jekyllrb.com/
 2. clone
 3. `gem install jekyll redcarpet`
 4. write your info in `_data/authors.yml`
-5. write post in `_posts` dir, the name like `2015-12-08-welcome-to-jekyll.markdown`
-6. `jekyll serve --trace`
+5. write post in `_posts` dir, the name like `2015-12-08-welcome-to-jekyll.md`
+6. `jekyll serve --trace`(optional), server will audo build markdown to html page
 7. pull request
 
 #### Note
@@ -53,4 +53,4 @@ end
 
 #### Deploy
 
-It will auto deploy after you `push` commit by use with github api see [github_webhook](https://github.com/onecampus/blog/blob/master/github_webhook.rb) for more info.
+It will auto deploy after you `push` commit by use with github api, see [github_webhook](https://github.com/onecampus/blog/blob/master/github_webhook.rb) for more info.
