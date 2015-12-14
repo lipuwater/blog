@@ -2,8 +2,8 @@
 layout: post
 title: "the importance of product's usage scenario"
 date: 2015-12-14
-category: tech
-tags: [reactor]
+category: product
+tags: [product usage-scenario]
 comments: true
 author: Jim Zach
 ---
