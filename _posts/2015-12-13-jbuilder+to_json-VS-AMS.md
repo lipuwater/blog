@@ -6,7 +6,6 @@ category: tech
 tags: [ruby, rails, to_json, jbuilder, AMS]
 comments: true
 author: flowerwrong
-avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
 
 我们在使用 [rails](https://github.com/rails/rails) 写`api`的时候，rails本身支持多种返回格式，常用的就是`XML`和`JSON`，今天讨论的话题就是返回的`JSON`格式数据的组装问题。

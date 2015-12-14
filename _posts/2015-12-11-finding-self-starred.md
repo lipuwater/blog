@@ -6,7 +6,6 @@ category: tech
 tags: [python, web_crawling]
 comments: true
 author: nekocode
-avatar: 'https://avatars1.githubusercontent.com/u/4783781?v=3&s=460'
 ---
 
 

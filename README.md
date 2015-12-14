@@ -28,7 +28,7 @@ Note: there are only three categories now. They are `tech`, `design` and `produc
 
 ###### Author
 
-You can use author info by add `author: flowerwrong` and `avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'` to post header.
+You can use author info by add `author: flowerwrong` to post header.
 
 ###### Demo post
 
@@ -41,7 +41,6 @@ category: tech
 tags: [ruby, ruby-ffi, c, ffi]
 comments: true
 author: flowerwrong
-avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
 
 You’ll find this post in your `_posts` directory.

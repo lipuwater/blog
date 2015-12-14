@@ -6,7 +6,6 @@ category: tech
 tags: [ruby, bubble_sort, erlang]
 comments: true
 author: flowerwrong
-avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
 
 #### 定义

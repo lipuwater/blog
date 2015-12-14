@@ -6,9 +6,7 @@ category: tech
 tags: [c++, rtmp, hls, srs, live]
 comments: true
 author: flowerwrong
-avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
-
 
 Use [srs](https://github.com/ossrs/srs) by [winlinvip](https://github.com/winlinvip) to set up simple a live stream server.
 

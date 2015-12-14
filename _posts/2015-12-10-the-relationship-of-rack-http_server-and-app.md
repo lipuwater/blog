@@ -6,7 +6,6 @@ category: tech
 tags: [ruby, thin, rack]
 comments: true
 author: flowerwrong
-avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
 
 本文描述了[rack](https://github.com/rack/rack)中间件, `http_server` [thin](https://github.com/macournoyer/thin) 和我们开发的逻辑应用之间的关系。首先介绍一下整体框架，描述了一个请求到相应的具体过程。

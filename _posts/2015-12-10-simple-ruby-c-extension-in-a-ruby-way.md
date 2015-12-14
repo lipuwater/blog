@@ -6,7 +6,6 @@ category: tech
 tags: [ruby, c-extension, c]
 comments: true
 author: flowerwrong
-avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
 
 [上一篇文章](http://blog.liveneeq.com/tech/2015/12/08/simple-ruby-ffi-demo.html)写了使用`ruby-ffi` gem来编写c扩展的方法，这种方法比较简单。这篇文章将介绍[官方的方法](https://github.com/ruby/ruby/blob/trunk/doc/extension.rdoc)来编写一个简单的c扩展。

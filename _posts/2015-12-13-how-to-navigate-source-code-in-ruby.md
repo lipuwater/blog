@@ -6,7 +6,6 @@ category: tech
 tags: [ruby, source_code]
 comments: true
 author: flowerwrong
-avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
 ---
 
 ruby是一门动态语言，各种元编程技术层出不穷，所以要找一个向java或者其他静态语言那样的`ide`可谓难如登天，
