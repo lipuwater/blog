@@ -1,56 +1,71 @@
-## Blog of liveneeq tech team
+# Liveneeq techblog
 
-This is the blog of liveneeq tech team. Powered by [jekyyl](http://jekyllrb.com/). Our blog url is http://blog.liveneeq.com/
+Source code of [liveneeq's techblog](http://blog.liveneeq.com).
 
-#### Usage
+It's powered by [Jekyyl](http://jekyllrb.com/).
 
-1. fork
-2. clone
-3. `gem install jekyll redcarpet`
-4. write your info in `_data/authors.yml`
-5. write post in `_posts` dir, the name like `2015-12-08-welcome-to-jekyll.md`
-6. `jekyll serve --trace`(optional), server will audo build markdown to html page
-7. pull request
+## Running locally
 
-#### Note
+Requirement:
 
-###### Comments
+* Ruby 2.0+
+* Gems: `jekyll`, `redcarpet`
 
-You can use [disqus comment plugin](https://disqus.com/) by add `comments: true` to post header.
+```shell
+git clone https://github.com/onecampus/blog
+cd blog
+jekyll serve
 
-###### Tags
-
-You can use tags by add `tags: [github, github-pages, jekyll]` to post header.
-
-###### Category
-
-You can use category by add `category: fake` to post header.
-Note: there are only three categories now. They are `tech`, `design` and `product`.
-
-###### Author
-
-You can use author info by add `author: flowerwrong` to post header.
-
-###### Demo post
-
-```
----
-layout: post
-title: "Simple ruby-ffi Demo"
-date: 2015-12-08 14:40:42 +0800
-category: tech
-tags: [ruby, ruby-ffi, c, ffi]
-comments: true
-author: flowerwrong
----
-
-You’ll find this post in your `_posts` directory.
-
-def bye_bye(name)
-  p "Bye bye, #{name}"
-end
+# Runing in production mode
+JEKYLL_ENV=production jekyll serve
 ```
 
-#### Deploy
+For more usage of `jekyll`, refer to [Jekyll Documentation](http://jekyllrb.com/docs/home/).
 
-It will auto deploy after you `push` commit by use with github api, see [github_webhook](https://github.com/onecampus/blog/blob/master/github_webhook.rb) for more info.
+## Write post
+
+1. fork the repository
+1. add your author info to `_data/authors.yml`
+1. add a post file to `_posts`, names it like "2015-12-08-welcome-to-jekyll.md"
+1. commit
+1. create a pull request
+
+See the former section if you want to preview the post.
+
+### Author Info
+
+Author info is saved in `_data/authors.yml`.
+
+You must specify avatar, job, intro fields.
+
+Optionally, you can specify your github, twitter, facebook, lofter, zhihu accounts.
+
+__If you don't have any of these accounts, delete that field instead of leave it empty__
+
+Add `author: name`(name is the key in `_data/authors.yml`) to the beginning of the post file to declare its author.
+
+### Comments
+
+[Disqus comment](https://disqus.com/) is integrated.
+
+If you want to disable comments, add `disable_comments: true` to the beginning of the post file.
+
+__Comments is only activated in production mode__.
+
+### Tags
+
+Add `tags: [tag1, tag2]` to the beginning of the post file.
+
+You can have as many tags as you want.
+
+### Category
+
+Add `category: tech` to the beginning of the post file.
+
+Any post should belong to one of the following categories: tech, design, product.
+
+## Deploy
+
+It will be automatically deployed after the master branch of [onecampus/blog](https://github.com/onecampus/blog) is updated.
+
+The auto deployment makes use of [GitHub Webhooks](https://developer.github.com/webhooks/).

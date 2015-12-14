@@ -1,12 +1,29 @@
 <aside class="sidebar">
-  <header>
+  <div>
     {% if page.author %}
       <div class="author">
         {% assign author = site.data.authors[page.author] %}
-        <img src="{{ author.avatar }}" alt="photo"><br>
+        <img class="photo" src="{{ author.avatar }}" alt="photo"><br>
         <a class="name" href="/authors/{{page.author}}">{{ page.author }}</a>
         <div class="position">{{ author.job }}</div>
         <div class="description">{{ author.intro }}</div>
+        <div class="links">
+          {% if author.github %}
+            <a href="{{author.github}}"><img src="/assets/logos/github.png" alt="github"></a>
+          {% endif %}
+          {% if author.twitter %}
+            <a href="{{author.twitter}}"><img src="/assets/logos/twitter.png" alt="twitter"></a>
+          {% endif %}
+          {% if author.lofter %}
+            <a href="{{author.lofter}}"><img src="/assets/logos/lofter.png" alt="lofter"></a>
+          {% endif %}
+          {% if author.zhihu %}
+            <a href="{{author.zhihu}}"><img src="/assets/logos/zhihu.png" alt="zhihu"></a>
+          {% endif %}
+          {% if author.facebook %}
+            <a href="{{author.facebook}}"><img src="/assets/logos/facebook.png" alt="facebook"></a>
+          {% endif %}
+        </div>
       </div>
     {% else %}
       <div class="logo"></div>
@@ -17,22 +34,20 @@
       <div class="item"><a href="/team.html">Team</a></div>
       <div class="item"><a target="_blank" href="http://www.lagou.com/gongsi/96435.html">Careers</a></div>
     </nav>
-  </header>
-
-  <div class="placeholder"></div>
-  {% unless page.author %}
-  <div class="related-links">
-    <h3>Related Links</h3>
-    <ul>
-      <li><a href="http://www.liveneeq.com">数库科技</a></li>
-      <li><a href="http://thecampus.cc">广州学壹文化传播有限公司</a></li>
-      <li><a href="https://github.com/onecampus">GitHub</a></li>
-    </ul>
   </div>
-  {% endunless %}
 
-  <div class="placeholder"></div>
-  <footer>
-    &copy; 2015. All rights reserved.
-  </footer>
+  <div>
+    {% unless page.author %}
+      <div class="related-links">
+        <h3>Related Links</h3>
+        <a href="https://github.com/onecampus"><img src="/assets/logos/github.png" alt="github"></a>
+        <a href="http://liveneeq.com"><img src="/assets/logos/liveneeq.png" alt="liveneeq"></a>
+        <a href="http://thecampus.cc"><img src="/assets/logos/thecampus.png" alt="thecampus"></a>
+      </div>
+    {% endunless %}
+
+    <footer>
+      &copy; 2015. All rights reserved.
+    </footer>
+  </div>
 </aside>
