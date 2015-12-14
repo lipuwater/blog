@@ -49,6 +49,9 @@ __If you don't have any of these accounts, delete that field instead of leave it
 
 Add `author: name`(name is the key in `_data/authors.yml`) to the beginning of the post file to declare its author.
 
+__Recommend: push your avatar image file to `blog/assets/avatars`__.
+
+
 ### Comments
 
 [Disqus comment](https://disqus.com/) is integrated.
