@@ -2,7 +2,7 @@
 title: "the importance of product's usage scenario"
 date: 2015-12-14
 category: product
-tags: [product usage-scenario]
+tags: [product, usage-scenario]
 author: Jim Zach
 ---
 
