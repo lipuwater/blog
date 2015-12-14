@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "How to navigate source code in ruby?"
 date: 2015-12-13
 category: tech
 tags: [ruby, source_code]
-comments: true
 author: flowerwrong
 ---
 

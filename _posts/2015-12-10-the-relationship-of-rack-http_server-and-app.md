@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "The relationship of rack, http_server and app"
 date: 2015-12-10
 category: tech
 tags: [ruby, thin, rack]
-comments: true
 author: flowerwrong
 ---
 

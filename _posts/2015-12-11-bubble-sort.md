@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Bubble Sort in Ruby and Erlang"
 date: 2015-12-11
 category: tech
 tags: [ruby, bubble_sort, erlang]
-comments: true
 author: flowerwrong
 ---
 

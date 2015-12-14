@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<ul class="author-list">
+  {% for author in site.data.authors %}
+    <li>
+      <img src="{{author[1].avatar}}" alt="photo"><br>
+      <a class="name" href="/authors/{{author[0]}}">{{ author[0] }}</a>
+      <div class="position">{{ author[1].job }}</div>
+    </li>
+  {% endfor %}
+</ul>

@@ -7,7 +7,7 @@ module Jekyll
       @name = 'index.html'
 
       process(@name)
-      read_yaml(File.join(base, '_layouts'), 'author_index.html')
+      read_yaml(File.join(base, 'template'), 'author.html')
       data['author'] = author
 
       author_title_prefix = site.config['author_title_prefix'] || 'Author: '
@@ -19,11 +19,9 @@ module Jekyll
     safe true
 
     def generate(site)
-      if site.layouts.key? 'author_index'
-        dir = site.config['author_dir'] || 'authors'
-        site.data['authors'].each_key do |author|
-          site.pages << AuthorPage.new(site, site.source, File.join(dir, author), author)
-        end
+      dir = site.config['author_dir'] || 'authors'
+      site.data['authors'].each_key do |author|
+        site.pages << AuthorPage.new(site, site.source, File.join(dir, author), author)
       end
     end
   end

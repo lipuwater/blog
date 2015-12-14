@@ -7,7 +7,7 @@ module Jekyll
       @name = 'index.html'
 
       process(@name)
-      read_yaml(File.join(base, '_layouts'), 'category_index.html')
+      read_yaml(File.join(base, 'template'), 'category.html')
       data['category'] = category
 
       category_title_prefix = site.config['category_title_prefix'] || 'Category: '
@@ -19,11 +19,9 @@ module Jekyll
     safe true
 
     def generate(site)
-      if site.layouts.key? 'category_index'
-        dir = site.config['category_dir'] || 'categories'
-        site.categories.each_key do |category|
-          site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
-        end
+      dir = site.config['category_dir'] || 'categories'
+      site.categories.each_key do |category|
+        site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
       end
     end
   end

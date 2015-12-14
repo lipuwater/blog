@@ -1,0 +1,38 @@
+<aside class="sidebar">
+  <header>
+    {% if page.author %}
+      <div class="author">
+        {% assign author = site.data.authors[page.author] %}
+        <img src="{{ author.avatar }}" alt="photo"><br>
+        <a class="name" href="/authors/{{page.author}}">{{ page.author }}</a>
+        <div class="position">{{ author.job }}</div>
+        <div class="description">{{ author.intro }}</div>
+      </div>
+    {% else %}
+      <div class="logo"></div>
+    {% endif %}
+
+    <nav>
+      <div class="item"><a href="/">Home</a></div>
+      <div class="item"><a href="/team">Team</a></div>
+      <div class="item"><a href="http://www.lagou.com/gongsi/96435.html">Careers</a></div>
+    </nav>
+  </header>
+
+  <div class="placeholder"></div>
+  {% unless page.author %}
+  <div class="related-links">
+    <h3>Related Links</h3>
+    <ul>
+      <li><a href="http://www.liveneeq.com">数库科技</a></li>
+      <li><a href="http://thecampus.cc">GitHub</a></li>
+      <li><a href="http://www.walkworld.com">微博</a></li>
+    </ul>
+  </div>
+  {% endunless %}
+
+  <div class="placeholder"></div>
+  <footer>
+    &copy; 2015. All rights reserved.
+  </footer>
+</aside>
