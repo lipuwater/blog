@@ -3,7 +3,7 @@
     {% if page.author %}
       <div class="author">
         {% assign author = site.data.authors[page.author] %}
-        <img class="photo" src="{{ author.avatar }}" alt="photo"><br>
+        <a href="/authors/{{page.author}}" class="photo"><img src="{{ author.avatar }}" alt="photo"></a><br>
         <a class="name" href="/authors/{{page.author}}">{{ page.author }}</a>
         <div class="position">{{ author.job }}</div>
         <div class="description">{{ author.intro }}</div>
