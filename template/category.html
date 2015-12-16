@@ -2,9 +2,7 @@
 layout: default
 ---
 
-<div class="page-hader">
-  Category: {{ page.category }}
-</div>
+{% include category-list.html %}
 
 {% assign posts = site.categories[page.category] | sort: 'date' %}
 <ul class="post-list">

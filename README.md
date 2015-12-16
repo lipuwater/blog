@@ -8,12 +8,15 @@ It's powered by [Jekyll](http://jekyllrb.com/).
 
 Requirement:
 
-* Ruby 2.0+
-* Gems: `jekyll`, `redcarpet`
+* Ruby 2.2+
+* Bundler: 1.10+
 
 ```shell
 git clone https://github.com/onecampus/blog
 cd blog
+
+# install dependencies
+bundle install
 
 # use jekyll built-in server
 jekyll serve
@@ -49,8 +52,7 @@ __If you don't have any of these accounts, delete that field instead of leave it
 
 Add `author: name`(name is the key in `_data/authors.yml`) to the beginning of the post file to declare its author.
 
-__Recommend: push your avatar image file to `blog/assets/avatars`__.
-
+For security and availability reasons, it is recommended to save your avatar in `assets/avatars` instead of using foreign resource.
 
 ### Comments
 
@@ -71,6 +73,12 @@ You can have as many tags as you want.
 Add `category: tech` to the beginning of the post file.
 
 Any post should belong to one of the following categories: tech, design, product.
+
+### Content
+
+Write your post content with [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
+
+If you need to use images or other assets, save then in assets/. Create sub-directory if necessary.
 
 ## Deploy
 
