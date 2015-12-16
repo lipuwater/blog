@@ -207,3 +207,48 @@ $sidebar-width: 360px;
     margin-left: 25%;
   }
 }
+
+.sidebar-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 300px;
+    left: auto;
+    right: -300px;
+    transition: right 0.3s ease-in-out;
+
+    &.active {
+      left: auto;
+      right: 0;
+    }
+
+    .related-links {
+      display: none;
+    }
+  }
+
+  .sidebar-toggle {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 128/5 * 1px;
+    height: 118/5 * 1px;
+    background-image: url(asset_path('menu.png'));
+    background-size: 100% 100%;
+    transition: right 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .sidebar.active + .sidebar-toggle {
+    right: 250px;
+  }
+
+  .page-main {
+    margin-left: 0;
+    padding: 1em;
+  }
+}
