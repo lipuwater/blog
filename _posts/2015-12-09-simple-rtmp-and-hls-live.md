@@ -9,11 +9,11 @@ author: flowerwrong
 Use [srs](https://github.com/ossrs/srs) by [winlinvip](https://github.com/winlinvip) to set up simple a live stream server.
 
 
-#### srs
+## srs
 
 SRS is industrial-strength live streaming cluster, for the best conceptual integrity and the simplest implementation.
 
-#### Install
+## Install
 
 ```bash
 git clone https://github.com/ossrs/srs.git
@@ -24,12 +24,12 @@ cd srs/trunk
 
 Now you can visit `127.0.0.1` to see the demo page for live.
 
-#### How to push flow to server?
+## How to push flow to server?
 
 * You can use android software [broadcaster](http://help.aodianyun.com/aodianyun_doc/60).
 * Also you can use adobe's [flash media live encoder](http://www.adobe.com/cn/products/flash-media-encoder.html).
 
-#### Reference
+## Reference
 
 * [srs server](https://github.com/ossrs/srs)
 * [srs wiki](https://github.com/ossrs/srs/wiki/v2_CN_Home)

@@ -28,7 +28,7 @@ Rack::Handler::Thin.run app
 那么会按照`ToUpper`, `ToCap`, `App`的执行顺序, 最后交由`thin`返回处理结果给客户端。
 
 
-###### `rack` based应用
+### `rack` based应用
 
 ```ruby
 # demo.rb
@@ -110,7 +110,7 @@ def initialize
 end
 ```
 
-#### app 实例
+## app 实例
 
 ```ruby
 app = Rack::Builder.new do
@@ -231,7 +231,7 @@ module Rack
 end
 ```
 
-#### `thin`开启监听
+## `thin`开启监听
 
 当调用`Rack::Handler::Thin.run app`后，`rack`就会执行`Rack::Handler::Thin.run`方法，接着创建server实例`server = ::Thin::Server.new(*args)`，同时创建`@app`实例，然后启动。
 在`Thin::Server`类中，我们可以查看他的初始化代码
@@ -310,7 +310,7 @@ module Thin
 end
 ```
 
-#### 请求到达
+## 请求到达
 
 当我们的请求到达的时候，比如`curl -i 'http://127.0.0.1:8080'`，依据`eventmachine`的规则： `post_init`，`receive_data(data)`，`unbind`等会先后执行。
 
@@ -408,7 +408,7 @@ end
 通过上面打印的三个变量，可以知道`middleware`和`app`直接形成了一个很深的调用栈.由此可以知道，上面的简单应用的执行顺序是`App` -> `ToUpper` -> `AddTail`.最后`AddTail`执行完毕后就交由`thin`返回给客户端，这是`post_process`做的事情。
 
 
-#### http协议解析
+## http协议解析
 
 `thin`使用的是c语言来解析http协议，http协议的解析主要是http头部。其中尤为重要的就是`Content-Length`，具体可以参考[rfc-2616](https://tools.ietf.org/html/rfc2616#page-119).
 扩展结构如下
@@ -428,15 +428,15 @@ end
 其中`.rl`文件是[ragel-Ragel State Machine Compiler](http://www.colm.net/open-source/ragel/)使用的，目的是生成c代码，类似flex和bison的作用。
 如果去查看thin的`Request`对象，你会发现它并没有在里面标记http头部的值，这里使用了和c语言共享数据的方法，利用的是c语言的值-结果参数特性。c语言共享数据可以参考[ruby-c-extension-book: chapter5](https://github.com/wusuopu/ruby-c-extension-book/tree/master/zh/chapter05#结构体封装)
 
-#### env对象
+## env对象
 
 env对象是在rack app 和 rack middleware直接无缝传递的关键, 是一个 `[status, headers, body]` 的数组。
 
 
-#### 待续
+## 待续
 
 
-#### Reference
+## Reference
 
 * [ruby-c-extension-book](https://github.com/wusuopu/ruby-c-extension-book)
 * [eventmachine wiki](https://github.com/eventmachine/eventmachine/wiki)
