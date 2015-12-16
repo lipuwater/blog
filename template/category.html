@@ -4,9 +4,9 @@ layout: default
 
 {% include category-list.html %}
 
-{% assign posts = site.categories[page.category] | sort: 'date' %}
+{% assign posts = site.categories[page.category] %}
 <ul class="post-list">
-  {% for post in posts %}
+  {% for post in posts | sort: date %}
     <li>
       <h2>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

@@ -7,7 +7,7 @@ layout: default
 </div>
 
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in site.posts | sort: date %}
     {% if post.author == page.author %}
       <li>
         <h2>
