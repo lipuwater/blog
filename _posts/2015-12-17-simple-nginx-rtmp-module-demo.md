@@ -6,6 +6,9 @@ tags: [nginx, rtmp]
 author: flowerwrong
 ---
 
+前面有写过一篇使用[srs](https://github.com/ossrs/srs)搭建直播服务器的文章，[地址](http://blog.liveneeq.com/tech/2015/12/09/simple-rtmp-and-hls-live.html)，srs大而且全，
+但架不住`nginx-rtmp-module`小而简介，本文主要描述`nginx-rtmp-module`搭配nginx搭建直播服务器的过程。
+
 ## Install
 
 ```bash
@@ -92,7 +95,10 @@ http {
 sudo sbin/nginx
 ```
 
-然后就可以使用其他人家推流了。如果需要转多路码率，查看官方文档。
+## How to push flow to server?
+
+* You can use android software [broadcaster](http://help.aodianyun.com/aodianyun_doc/60).
+* Also you can use adobe's [flash media live encoder](http://www.adobe.com/cn/products/flash-media-encoder.html).
 
 ## Reference
 
