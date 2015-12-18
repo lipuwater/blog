@@ -12,6 +12,19 @@ author: flowerwrong
 ## Install
 
 ```bash
+# install build tools
+sudo apt-get install build-essential
+sudo apt-get install g++ autoconf automake cmake git curl zlib1g zlib1g.dev
+
+# install ffmpeg
+sudo apt-get install ffmpeg
+
+# install ssl for nginx
+sudo apt-get install libssl-dev
+
+# install pcre for nginx
+sudo apt-get install libpcre3 libpcre3-dev
+
 mkdir live-demo && cd live-demo
 wget http://nginx.org/download/nginx-1.9.9.tar.gz
 tar -zxvf nginx-1.9.9.tar.gz
@@ -32,57 +45,61 @@ cd /usr/local/nginx
 ```
 # nginx.conf
 
-# user root;
-worker_processes  1;
-
+worker_processes 4; # cpu核数
 
 events {
     worker_connections  1024;
 }
 
-
 rtmp {
     server {
-      	listen 1935; # rtmp协议服务端口
+      	listen 1935;
       	chunk_size 4000;
-
       	application live {
-      	    live on;
+    	      live on;
 
       	    record all;
-      	    record_path /usr/local/nginx/html/videos; # 保存flv文件到该文件夹, 注意文件夹权限改为777
-      	    # record_max_size 100M;
+      	    record_path /usr/local/nginx/html/videos; # 目录权限777
+      	    record_max_size 10000M; # 最大文件为10G，超过大小就会自动才分为多个文件
+            record_suffix -%Y-%m-%d-%T.flv; # flv文件名
       	    record_unique on;
 
             hls on;
-            hls_path /tmp/hls; # hls分片保存文件夹，会自动清理, 注意文件夹权限改为777
-  	    }
+            hls_path /usr/local/nginx/html/hls; # 目录权限777
+
+            # 转为426*240
+            exec ffmpeg -i rtmp://localhost/$app/$name -s 426*240 -c:a libfdk_aac -b:a 128k -c:v libx264 -b:v 700k -f flv rtmp://localhost/sd/$name;
+	      }
+
+        application sd {
+            live on;
+
+            hls on;
+            hls_path /usr/local/nginx/html/hls-sd; # 目录权限777
+        }
     }
 }
 
 
 http {
     server {
-        listen 80; # http协议服务端口
-
-	      server_name localhost _ 192.168.10.160; # 修改为你的ip
-
-	      location /stat {
-            rtmp_stat all;
-
-            rtmp_stat_stylesheet stat.xsl;
-        }
-
-	      location /stat.xsl {
-            root /usr/local/nginx/html/stat.xsl;
-        }
+        listen      80;
 
 	      location /hls {
             types {
                 application/vnd.apple.mpegurl m3u8;
                 video/mp2t ts;
             }
-            root /tmp; # 注意配合hls_path
+            root /usr/local/nginx/html;
+            add_header Cache-Control no-cache;
+        }
+
+        location /hls-sd {
+            types {
+                application/vnd.apple.mpegurl m3u8;
+                video/mp2t ts;
+            }
+            root /usr/local/nginx/html;
             add_header Cache-Control no-cache;
         }
     }
