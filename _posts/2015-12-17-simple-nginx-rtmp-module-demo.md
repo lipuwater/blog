@@ -7,7 +7,7 @@ author: flowerwrong
 ---
 
 前面有写过一篇使用[srs](https://github.com/ossrs/srs)搭建直播服务器的文章，[地址](http://blog.liveneeq.com/tech/2015/12/09/simple-rtmp-and-hls-live.html)，srs大而且全，
-但架不住`nginx-rtmp-module`小而简介，本文主要描述`nginx-rtmp-module`搭配nginx搭建直播服务器的过程。
+但架不住`nginx-rtmp-module`小而美，本文主要描述`nginx-rtmp-module`搭配nginx搭建直播服务器的过程。
 
 ## Install
 
@@ -83,9 +83,9 @@ rtmp {
 
 http {
     server {
-        listen      80;
+        listen 80;
 
-	      location /hls {
+        location /hls {
             types {
                 application/vnd.apple.mpegurl m3u8;
                 video/mp2t ts;
