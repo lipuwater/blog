@@ -1,6 +1,6 @@
 ---
 title: "Simple Nginx Rtmp Demo"
-date: 2015-12-16
+date: 2015-12-17
 category: tech
 tags: [nginx, rtmp]
 author: flowerwrong
