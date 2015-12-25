@@ -83,7 +83,8 @@ vhost __defaultVhost__ {
 
     transcode {
         enabled     on;
-        ffmpeg      ./objs/ffmpeg/bin/ffmpeg;
+        # ffmpeg      ./objs/ffmpeg/bin/ffmpeg;
+        ffmpeg      /usr/bin/ffmpeg; # use your own ffmpeg, run `which ffmpeg`, @see https://github.com/ossrs/srs/issues/550
         engine sd {
             enabled         on;
             vfilter {
@@ -156,3 +157,4 @@ Now you can visit `127.0.0.1` to see the demo page for live.
 
 * [srs server](https://github.com/ossrs/srs)
 * [srs wiki](https://github.com/ossrs/srs/wiki/v2_CN_Home)
+* [srs callback](https://github.com/FlowerWrong/srs_callback)
