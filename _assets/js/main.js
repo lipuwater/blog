@@ -1,5 +1,3 @@
-//=require highlight.pack.js
-
 (function(){
   hljs.initHighlightingOnLoad();
 

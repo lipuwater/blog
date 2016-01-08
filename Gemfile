@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://ruby.taobao.org'
 
 gem 'jekyll', '> 3.0'
 gem 'redcarpet'
