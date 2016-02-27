@@ -49,6 +49,25 @@ sudo wireshark
 #### google-chrome: install with brew
 #### sourcetree: install with brew
 #### shadowsocks-libev: install brew
+#### 图片预览: preview不好用，使用finder替代，点选图片，然后空格键；如果不在乎几十块钱，买xee
+#### [cheatsheet](https://www.mediaatelier.com/CheatSheet/): know your short custs.
+
+`hold command key for a later`
+
+#### [spectacle](https://github.com/eczarny/spectacle): Spectacle allows you to organize your windows without using a mouse: Spectacle allows you to organize your windows without using a mouse.
+
+```zsh
+alt + command + f => fullscreen
+alt + command + > => left side
+...
+```
+
+#### [Hammerspoon](http://www.hammerspoon.org/): This is a tool for powerful automation of OS X
+#### tiling window manager
+
+###### [Amethyst](https://github.com/ianyh/Amethyst): I selected.
+###### [kwm](https://github.com/koekeishiya/kwm)
+###### [more](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
 
 ## 开发环境
 
