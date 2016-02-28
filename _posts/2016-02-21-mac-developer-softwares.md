@@ -70,6 +70,8 @@ alt + command + > => left side
 ### [kwm](https://github.com/koekeishiya/kwm)
 ### [more](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
 
+## [sequel-pro](http://www.sequelpro.com/): mysql db management
+
 # 开发环境
 
 ## nodejs
