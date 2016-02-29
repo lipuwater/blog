@@ -38,6 +38,7 @@ brew cask install google-chrome
 ## iTerm2 + tmux: mac terminal 增强
 ## dash: 查看 api 文档的工具, install via app store
 ## [atom editor](http://atom.io/)
+## [mate 2](https://macromates.com/): rails default editor
 ## wireshark: 抓包软件
 
 ```zsh
