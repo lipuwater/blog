@@ -111,4 +111,12 @@ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 ```
 
+## Terminal 技巧
+
+* ctrl + a:移动光标的开头
+* ctrl + e:移动光标的末尾
+* shift + esc + b:向前按单词移动光标
+* shift + esc + f:向后按单词移动光标
+* 光标移动速度: 系统偏好设置->键盘->按键重复快，按键前延迟慢
+
 # 待续
