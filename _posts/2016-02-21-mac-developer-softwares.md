@@ -75,6 +75,11 @@ alt + command + > => left side
 ## [redisdesktop](http://redisdesktop.com/): Cross-platform open source Redis DB management tool
 ## [OBS](https://obsproject.com/): Free, open source software for live streaming and recording
 ## [eclipse-cpp](http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars2): eclipse for c/c++ developer
+## [go2shell](http://zipzapmac.com/go2shell)
+
+### config
+
+`open -a Go2Shell --args config`
 
 # 开发环境
 
