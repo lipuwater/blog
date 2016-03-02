@@ -63,9 +63,9 @@ alt + command + > => left side
 ...
 ```
 
-## [Hammerspoon](http://www.hammerspoon.org/): : I selected.
+## [Hammerspoon](http://www.hammerspoon.org/): : I selected, config window manager, hot keys and others in lua.
 
-## tiling window manager(with Hammerspoon you can del it)
+## tiling window manager(with Hammerspoon you can del theme)
 
 ### [Amethyst](https://github.com/ianyh/Amethyst)
 ### [kwm](https://github.com/koekeishiya/kwm)
