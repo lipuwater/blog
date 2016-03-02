@@ -55,7 +55,7 @@ sudo wireshark
 
 `hold command key for a later`
 
-## [spectacle](https://github.com/eczarny/spectacle): Spectacle allows you to organize your windows without using a mouse: Spectacle allows you to organize your windows without using a mouse.
+## [spectacle](https://github.com/eczarny/spectacle): Spectacle allows you to organize your windows without using a mouse: Spectacle allows you to organize your windows without using a mouse. (with Hammerspoon you can del it)
 
 ```zsh
 alt + command + f => fullscreen
@@ -63,13 +63,24 @@ alt + command + > => left side
 ...
 ```
 
-## [Hammerspoon](http://www.hammerspoon.org/): This is a tool for powerful automation of OS X
+## [Hammerspoon](http://www.hammerspoon.org/): : I selected.
 
-## tiling window manager
+## tiling window manager(with Hammerspoon you can del it)
 
-### [Amethyst](https://github.com/ianyh/Amethyst): I selected.
+### [Amethyst](https://github.com/ianyh/Amethyst)
 ### [kwm](https://github.com/koekeishiya/kwm)
+
+```zsh
+kwmc help
+
+kwmc space -t bsp # 自动分屏效果
+kwmc space -t monocle ＃ 每个窗口都全屏
+kwmc space -t float # 不回自动分屏
+```
+
 ### [more](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
+### [more2](https://news.ycombinator.com/item?id=10771186)
+### [more3](https://news.ycombinator.com/item?id=8768022)
 
 ## [sequel-pro](http://www.sequelpro.com/): mysql gui db management
 ## [redisdesktop](http://redisdesktop.com/): Cross-platform open source Redis DB management tool
