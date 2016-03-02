@@ -134,6 +134,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 * shift + esc + b:向前按单词移动光标
 * shift + esc + f:向后按单词移动光标
 * 光标移动速度: 系统偏好设置->键盘->按键重复快，按键前延迟慢
+* 目录跳转 `autojump` oh-my-zsh plugin. Usage: `j -h`
 
 ## 桌面技巧
 
