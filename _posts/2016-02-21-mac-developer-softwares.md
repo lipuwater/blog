@@ -55,7 +55,7 @@ sudo wireshark
 
 `hold command key for a later`
 
-## [spectacle](https://github.com/eczarny/spectacle): Spectacle allows you to organize your windows without using a mouse: Spectacle allows you to organize your windows without using a mouse. (with Hammerspoon you can del it)
+## [spectacle](https://github.com/eczarny/spectacle): Spectacle allows you to organize your windows without using a mouse. (with Hammerspoon you can del it)
 
 ```zsh
 alt + command + f => fullscreen
@@ -63,18 +63,18 @@ alt + command + > => left side
 ...
 ```
 
-## [Hammerspoon](http://www.hammerspoon.org/): : I selected, config window manager, hot keys and others in lua.
+## [Hammerspoon](http://www.hammerspoon.org/): I selected, config window manager, hot keys and others in lua.
 
 ## tiling window manager(with Hammerspoon you can del theme)
 
-### [Amethyst](https://github.com/ianyh/Amethyst)
-### [kwm](https://github.com/koekeishiya/kwm)
+### [Amethyst](https://github.com/ianyh/Amethyst): easy to use
+### [kwm](https://github.com/koekeishiya/kwm): configable and nice syntax
 
 ```zsh
 kwmc help
 
 kwmc space -t bsp # 自动分屏效果
-kwmc space -t monocle ＃ 每个窗口都全屏
+kwmc space -t monocle # 每个窗口都全屏
 kwmc space -t float # 不回自动分屏
 ```
 
@@ -134,5 +134,11 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 * shift + esc + b:向前按单词移动光标
 * shift + esc + f:向后按单词移动光标
 * 光标移动速度: 系统偏好设置->键盘->按键重复快，按键前延迟慢
+
+## 桌面技巧
+
+* tiling window manager with hammerspoon plugin [hs.tiling](https://github.com/dsanson/hs.tiling)
+* 可以添加桌面，快捷键是 ctrl + 上方向键 或者 F3，然后点击 + 号
+* ctrl + 左右方向键 切换桌面
 
 # 待续
