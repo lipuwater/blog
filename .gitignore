@@ -10,3 +10,6 @@
 *.o
 *.so
 /.idea/
+
+/.deploy/id_rsa
+/tmp

@@ -1,0 +1,28 @@
+language: ruby
+
+rvm:
+  - 2.3.0
+
+addons:
+  ssh_known_hosts: blog.liveneeq.com
+
+before_install:
+  - sed -i "/^source/c source \'https://rubygems.org\'" Gemfile
+  - openssl aes-256-cbc -K $encrypted_ff905678d5af_key -iv $encrypted_ff905678d5af_iv -in .deploy/id_rsa.enc -out .deploy/id_rsa -d
+  - chmod 600 .deploy/id_rsa
+
+script:
+  - JEKYLL_ENV=production bundle exec jekyll build
+  - bundle exec htmlproof ./_site --empty-alt-ignore --disable-external
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - secure: "NldcW3LtHk9e1tdDewk/NJYJyFeMcwNuqeA4/U/KY1D8FGQ0gHT1VuwkExL/cdZBJR/kzJw6S0h+I/+AffFdhVsI3UYMqOENThuLPKJYlopcqOj9t8W0JEQzj2yiPa2yf+xXGSDQKKZYatnUJm5WAUtECwvF0e7Z9eix8MtINhnafCDeoRwrYaCTbUkbfaBDuxjbcm5bGnk+O5JZpKwFbrm9MSse3FkQhdufxHMMvvMYCJOR6SyLNwBWRspVS7A2Lzv1rgVMe2ui1FcU84AiAwDDXr1YZfF9eEPjy1650FsjbXRFqMam/Fas9eQbPscHBiEQCNPmG7KSK+IpSsRg568R+jpqO0uF4mQZnhyciX8KlHK9K6fh0sMSeWmqkg3/RPjclcKxVw0GxGvJpkB/SSzYAYWfF0MfcKkdIrtZS1YD0lyaRPSDzetGaDAs53XC/j20wmQkogMj6RBjhmlMha8v/iyE4q7oIo6h7n/RwJHa06IG3gDeK/D0DwgtonLeBx8L82ViRvee6/BcfHhhXrbE/LhJUcnrSGJLHJMGI8j4jzdwv37VQFJeOsVECEdDtPe1Djd2ZpH1xhSjmCmGbbWhx9x/17qG7fSPEh4C3aY06s6QZo1CYgHO9f4CHyDf/Ewb+4bsQAzW7ZE0dcxBxbgJ2LdSBT7QBljwMRpd1EU="
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: rsync -vrthu --checksum --delete -e 'ssh -i .deploy/id_rsa' _site/* $deploy_to
+  on:
+    branch: master
