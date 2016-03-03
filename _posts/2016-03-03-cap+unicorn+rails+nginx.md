@@ -451,7 +451,7 @@ Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 
 ## 总结：
 
-部署的基本流程和nginx的基本配置基本熟悉，原理层面的东西没有很深刻的理解。往后的学习将是通过源码的阅读等方式去理解这些东西。
+缺乏深刻理解
 
 
 
