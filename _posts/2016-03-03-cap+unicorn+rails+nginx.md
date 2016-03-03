@@ -1,6 +1,6 @@
 ---
 title: "arch 下的 nginx + unicorn + rails app 的配置记录"
-date: 2016-2-23
+date: 2016-03-03
 category: tech
 tags: [nginx, unicorn, rails, deploy, capistrano]
 author: jun
