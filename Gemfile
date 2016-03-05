@@ -3,6 +3,9 @@ source 'https://ruby.taobao.org'
 gem 'jekyll', '> 3.0'
 gem 'redcarpet'
 
+# validate generated site
+gem "html-proofer"
+
 # CSS autoprefixer
 gem 'autoprefixer-rails'
 gem 'jekyll-assets'
