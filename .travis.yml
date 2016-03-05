@@ -8,7 +8,7 @@ addons:
 
 before_install:
   - sed -i "/^source/c source \'https://rubygems.org\'" Gemfile
-  - openssl aes-256-cbc -K $encrypted_ff905678d5af_key -iv $encrypted_ff905678d5af_iv -in .deploy/id_rsa.enc -out .deploy/id_rsa -d
+  - openssl aes-256-cbc -K $encrypted_edca024af890_key -iv $encrypted_edca024af890_iv -in id_rsa.enc -out .deploy/id_rsa -d
   - chmod 600 .deploy/id_rsa
 
 script:
@@ -18,7 +18,7 @@ script:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - secure: "NldcW3LtHk9e1tdDewk/NJYJyFeMcwNuqeA4/U/KY1D8FGQ0gHT1VuwkExL/cdZBJR/kzJw6S0h+I/+AffFdhVsI3UYMqOENThuLPKJYlopcqOj9t8W0JEQzj2yiPa2yf+xXGSDQKKZYatnUJm5WAUtECwvF0e7Z9eix8MtINhnafCDeoRwrYaCTbUkbfaBDuxjbcm5bGnk+O5JZpKwFbrm9MSse3FkQhdufxHMMvvMYCJOR6SyLNwBWRspVS7A2Lzv1rgVMe2ui1FcU84AiAwDDXr1YZfF9eEPjy1650FsjbXRFqMam/Fas9eQbPscHBiEQCNPmG7KSK+IpSsRg568R+jpqO0uF4mQZnhyciX8KlHK9K6fh0sMSeWmqkg3/RPjclcKxVw0GxGvJpkB/SSzYAYWfF0MfcKkdIrtZS1YD0lyaRPSDzetGaDAs53XC/j20wmQkogMj6RBjhmlMha8v/iyE4q7oIo6h7n/RwJHa06IG3gDeK/D0DwgtonLeBx8L82ViRvee6/BcfHhhXrbE/LhJUcnrSGJLHJMGI8j4jzdwv37VQFJeOsVECEdDtPe1Djd2ZpH1xhSjmCmGbbWhx9x/17qG7fSPEh4C3aY06s6QZo1CYgHO9f4CHyDf/Ewb+4bsQAzW7ZE0dcxBxbgJ2LdSBT7QBljwMRpd1EU="
+    - secure: "ejJYt+SkzrDivtYZtXSJQysKXHeIvT9JlauBSAA+PPhDso9Q7AbOd3Bk8T3LQCGeDMO7TARfrNjPKYPDX1XHpnK9LTMThsWPYl4CvOFSRo/G7V4tkgUxCCvAXd0ffd1xJA3mODRiIybGRqqovfIBh1PDU00HzJMlMtF7mVr4+P0BPg09nU6e01Tjmy9rO5p1jcHMQvFdzUAUUNWGFML9+1ZpojlaCOGLDOASNUv6RsxwkP26vA7iOvZG4fzrLf994rm76FMWOlXh3oxlUC+zPfl2Myu+RK8FaFFp0LFxp0VsAA+8hnS8y5TDRJMifiSK/+7FCuEsdz4YjRcbcpXIOZRJ9YeqsS5IVGTcOeNs4RDCLLvvtBIcBUilw0VVjbxWMHmG0XXCqqrwHW6m0p2ucOStEVPpH4gvlKAj2+rARqYmIzo9vwEiCAe3nzV1egl0dzXAkB60NfqEQaqDmhdd4kNWsviFj0fa+mpg7oHmFPzKvHAzr3UUloapB+bQOTgOxA26nVY12tFO81pG6zzi1GvgMsxGeOaW2Yfu8ODfeAA6X41SMONdKsMoxmV3pxgzdOeEsiutj8SzQGhuik8UKKjIvTejBR5U/sKvrBrR3/4SJ6tQQlvgFeb8+qJtKsabogy5H0eEjDFks+3obqy6bY7d3c02KAcL1uFuJZszXJI="
 
 deploy:
   skip_cleanup: true
