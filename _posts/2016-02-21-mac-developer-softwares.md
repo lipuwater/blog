@@ -87,6 +87,7 @@ kwmc space -t float # 不回自动分屏
 ## [OBS](https://obsproject.com/): Free, open source software for live streaming and recording
 ## [eclipse-cpp](http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars2): eclipse for c/c++ developer
 ## [go2shell](http://zipzapmac.com/go2shell)
+## [glances](https://github.com/nicolargo/glances): 流量统计工具
 
 ### config
 
