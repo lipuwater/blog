@@ -1,4 +1,5 @@
 # Liveneeq techblog
+[![Travis CI](https://travis-ci.org/onecampus/blog.svg)](https://travis-ci.org/onecampus/blog)
 
 Source code of [liveneeq's techblog](http://blog.liveneeq.com).
 
