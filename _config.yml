@@ -45,16 +45,12 @@ defaults:
 
 exclude:
   - template
-  - auto_update.sh
-  - github_webhook.rb
-  - config.ru
   - README.md
   - Deployment.md
   - Gemfile
   - Gemfile.lock
   - autoprefixer.yml
   - vendor  # Travis-CI generated directory
-  - .deploy
 
 gems:
   - jekyll-assets
