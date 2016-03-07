@@ -18,7 +18,7 @@ As for deploy, we tell Travis-CI to use `rsync` to sync builded files to our blo
 
 * And switch on this repository on [Travis-CI Profile](https://travis-ci.org/profile) page
 
-* Add a `.travis.yml` file to the repo's root directory
+* Change `.travis.yml` as needed
 
 ### Server Configuration
 
@@ -76,7 +76,7 @@ travis login
     travis encrypt 'deploy_to=user@server:deploy_dir'
     ```
 
-    Paste generated string into `.travis.yml's` `env:global` section.
+    Paste generated string into `.travis.yml's` `env:global` stage.
 
 * Encrypt ssh private key
 
@@ -84,6 +84,6 @@ travis login
     travis encrypt-file .deploy/id_rsa
     ```
 
-    Paste generated string into `.travis.yml's` `before_install` section.
+    Paste generated string into `.travis.yml's` `before_deploy` stage.
 
     Change `--in` and `--out` params if they are not `--in .deploy/id_rsa.enc --out .deploy/id_rsa`.
