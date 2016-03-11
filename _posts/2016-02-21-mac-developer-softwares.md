@@ -93,6 +93,7 @@ kwmc space -t float # 不回自动分屏
 `open -a Go2Shell --args config`
 
 ## [glances](https://github.com/nicolargo/glances): 流量统计工具
+## [macdown](http://macdown.uranusjr.com/): MacDown is an open source Markdown editor for OSX
 
 # 开发环境
 
