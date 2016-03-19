@@ -1,17 +1,44 @@
 flowerwrong:
-  github: 'https://github.com/FlowerWrong'
-  twitter: 'https://twitter.com/Dennis69249870'
   avatar: 'https://avatars2.githubusercontent.com/u/5362640?v=3&s=460'
-  facebook: ''
-  email: ''
   job: 'Github Porter'
   intro: 'The rest of the world is wrong...and we are right...'
+  github: 'https://github.com/FlowerWrong'
+  twitter: 'https://twitter.com/Dennis69249870'
+  zhihu: 'https://www.zhihu.com/people/dennis-yang'
+  lofter: 'http://www.lofter.com'
 
 nekocode:
-  github: 'https://github.com/nekocode'
-  twitter: 'https://twitter.com/'
   avatar: 'https://avatars1.githubusercontent.com/u/4783781?v=3&s=460'
-  facebook: ''
-  email: ''
-  job: 'Android'
-  intro: 'I am very handsome.'
+  job: 'Android SB'
+  intro: 'Handsome man.'
+  github: 'https://github.com/nekocode'
+  zhihu: 'https://www.zhihu.com/people/nekocode'
+
+Jim Zach:
+  avatar: '/assets/avatars/jinze.png'
+  job: 'Product Manager'
+  intro: 'I am very handsome too.'
+  twitter: 'https://twitter.com/'
+  zhihu: 'https://www.zhihu.com/people/dennis-yang'
+  lofter: 'http://www.lofter.com'
+
+Ruchee:
+  avatar: 'https://avatars3.githubusercontent.com/u/1149598?v=3&s=460'
+  job: 'Ruby Programmer'
+  intro: 'A Vim gay'
+  twitter: 'https://twitter.com/rucheecn'
+  zhihu: 'https://www.zhihu.com/people/ruchee'
+  lofter: 'http://www.ruchee.com'
+
+zhou:
+  avatar: 'https://avatars0.githubusercontent.com/u/11404946?v=3&s=460'
+  job: 'Frontend'
+  intro: 'Watch And Learn'
+
+linyunjiang:
+  avatar: 'https://avatars2.githubusercontent.com/u/8032543?v=3&s=460'
+  job: 'Ruby Programmer'
+
+jun:
+  avatar: 'https://avatars0.githubusercontent.com/u/6030422?v=3&s=460'
+  job: 'Ruby Programmer'

@@ -6,16 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: liveneeq-blog
-email: it@liveneeq.com
-description: > # A blog of liveneeq.com.
+title: Liveneeq Blog
+description: Techblog of liveneeq
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://onecampus.github.io/" # the base hostname & protocol for your site
-twitter_username: liveneeq
-github_username: onecampus
+url: "http://blog.liveneeq.com" # the base hostname & protocol for your site
 
 disqus_shortname: liveneeqblog
-
 
 # @see http://jekyllrb.com/docs/configuration/
 highlighter: true
@@ -28,5 +24,46 @@ redcarpet:
     - strikethrough
     - fenced_code_blocks
 
+# GitHub Flavored Markdown
+kramdown:
+  input: GFM
 
 timezone: 'Asia/Shanghai'
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - template
+  - README.md
+  - Deployment.md
+  - Gemfile
+  - Gemfile.lock
+  - autoprefixer.yml
+  - vendor  # Travis-CI generated directory
+
+gems:
+  - jekyll-assets
+
+assets:
+  prefix: "/assets"
+  digest: true
+  assets:
+    - "*.png"
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/images
+  features:
+    automatic_img_size: false
+    automatic_img_alt : false

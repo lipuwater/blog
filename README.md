@@ -1,56 +1,95 @@
-## Blog of liveneeq tech team
+# Liveneeq techblog
 
-This is the blog of liveneeq tech team. Powered by [jekyyl](http://jekyllrb.com/). Our blog url is http://blog.liveneeq.com/
+[![Travis CI](https://travis-ci.org/onecampus/blog.svg)](https://travis-ci.org/onecampus/blog)
 
-#### Usage
+Source code of [liveneeq's techblog](http://blog.liveneeq.com).
 
-1. fork
-2. clone
-3. `gem install jekyll`
-4. write your info in `_data/authors.yml`
-5. write post in `_posts` dir, the name like `2015-12-08-welcome-to-jekyll.markdown`
-6. `jekyll serve --trace`
-7. pull request
+It's powered by [Jekyll](http://jekyllrb.com/).
 
-#### Note
+## Running locally
 
-###### Comments
+Requirement:
 
-You can use [disqus comment plugin](https://disqus.com/) by add `comments: true` to post header.
+* Ruby 2.2+
+* Bundler: 1.10+
 
-###### Tags
+```shell
+git clone https://github.com/onecampus/blog
+cd blog
 
-You can use tags by add `tags: [github, github-pages, jekyll]` to post header.
+# install dependencies
+bundle install
 
-###### Category
+# use jekyll built-in server
+jekyll serve
 
-You can use category by add `category: fake` to post header.
-Note: there are only three categories now. They are `tech`, `design` and `product`.
+# build. You can then use any server to serve static files in _site directory
+jekyll build
 
-###### Author
+# build in production mode
+JEKYLL_ENV=production jekyll build
 
-You can use author info by add `author: flowerwrong` to post header.
-
-###### Demo post
-
-```
----
-layout: post
-title: "Simple ruby-ffi Demo"
-date: 2015-12-08 14:40:42 +0800
-category: tech
-tags: [ruby, ruby-ffi, c, ffi]
-comments: true
-author: flowerwrong
----
-
-You’ll find this post in your `_posts` directory.
-
-def bye_bye(name)
-  p "Bye bye, #{name}"
-end
+# validate generated html files
+bundle exec htmlproof ./_site --empty-alt-ignore --disable-external
 ```
 
-#### Deploy
+For more usage of `jekyll`, refer to [Jekyll Documentation](http://jekyllrb.com/docs/home/).
 
-It will auto deploy after you `push` commit by use with github api see [github_webhook](https://github.com/onecampus/blog/blob/master/github_webhook.rb) for more info.
+## Write post
+
+1. Fork the repository, and create a personal branch based on upstream/master (upstream here means liveneeq's official repository) to work on
+1. Add your author info to `_data/authors.yml`
+1. Add a post file to `_posts`, names it like "2015-12-08-welcome-to-jekyll.md"
+1. Commit and push to your repository
+1. Create a pull request to upstream/master
+1. (Optional) Delete the personal branch after your pull request is accepted
+
+__Note:__
+
+* Only fast-forward mergable pull requests should be accepted, so [rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) may be needed
+* Squashing your commits before creating a pull request is strongly encouraged
+* Every pull request will be automatically tested by [Travis-CI](https://travis-ci.org). Of course failed pull requests won't be accepted
+
+Whenever upstream/master is updated, the blog will be automatically deployed, and you can see your post in the [blog site](http://blog.liveneeq.com).
+
+See the former section if you want to test or preview your post locally.
+
+### Author Info
+
+Author info is saved in `_data/authors.yml`.
+
+You must specify avatar, job, intro fields.
+
+Optionally, you can specify your github, twitter, facebook, lofter, zhihu accounts.
+
+__If you don't have any of these accounts, delete that field instead of leave it empty__
+
+Add `author: name`(name is the key in `_data/authors.yml`) to the beginning of the post file to declare its author.
+
+For security and availability reasons, it is recommended to save your avatar in `assets/avatars` instead of using foreign resource.
+
+### Comments
+
+[Disqus comment](https://disqus.com/) is integrated.
+
+If you want to disable comments, add `disable_comments: true` to the beginning of the post file.
+
+__Comments is only activated in production mode__.
+
+### Tags
+
+Add `tags: [tag1, tag2]` to the beginning of the post file.
+
+You can have as many tags as you want.
+
+### Category
+
+Add `category: tech` to the beginning of the post file.
+
+Any post should belong to one of the following categories: tech, design, product.
+
+### Content
+
+Write your post content with [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
+
+If you need to use images or other assets, save then in assets/. Create sub-directory if necessary.

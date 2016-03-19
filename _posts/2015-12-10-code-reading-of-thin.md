@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Code Reading of Thin"
 date: 2015-12-10
 category: tech
 tags: [ruby, thin]
-comments: true
 author: flowerwrong
 ---
 

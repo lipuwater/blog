@@ -1,0 +1,7 @@
+<header class="page-header">
+  <nav class="category-list">
+    {% for category in site.categories %}
+      <a href="{{ site.baseurl}}/categories/{{ category[0] }}" class="item {% if page.category == category[0] %} active {% endif %}">{{ category[0] }}</a>
+    {% endfor %}
+  </nav>
+</header>

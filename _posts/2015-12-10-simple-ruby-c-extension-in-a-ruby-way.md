@@ -1,17 +1,15 @@
 ---
-layout: post
 title: "Simple Ruby C Extension in a Ruby Way"
 date: 2015-12-10
 category: tech
 tags: [ruby, c-extension, c]
-comments: true
 author: flowerwrong
 ---
 
 [上一篇文章](http://blog.liveneeq.com/tech/2015/12/08/simple-ruby-ffi-demo.html)写了使用`ruby-ffi` gem来编写c扩展的方法，这种方法比较简单。这篇文章将介绍[官方的方法](https://github.com/ruby/ruby/blob/trunk/doc/extension.rdoc)来编写一个简单的c扩展。
 本文延续上文，写一个简单的求和扩展。[源码](https://github.com/FlowerWrong/ffi-demos/tree/master/ruby-ext/ext/demo)地址.
 
-#### Main c api
+## Main c api
 
 ```c
 VALUE rb_define_class(const char *name, VALUE super) // 创建ruby的class
@@ -31,7 +29,7 @@ void rb_define_const(VALUE klass, const char *name, VALUE val) // 定义常量
 void rb_define_global_const(const char *name, VALUE val) // 定义全局常量
 ```
 
-#### 代码骨架
+## 代码骨架
 
 ```bash
 └── ruby-ext
@@ -42,9 +40,9 @@ void rb_define_global_const(const char *name, VALUE val) // 定义全局常量
             └── README.md
 ```
 
-#### 代码解析
+## 代码解析
 
-###### demo.c
+### demo.c
 
 demo.c包括了c语言的求和函数 `int sum(int a, int b)`, 包裹函数 `VALUE demo_sum(VALUE self, VALUE aa, VALUE bb)` 以及ruby扩展的初始化函数 `void Init_Demo()`.
 
@@ -81,7 +79,7 @@ module Demo
 end
 ```
 
-###### extconf.rb
+### extconf.rb
 
 ```ruby
 require 'mkmf'
@@ -91,9 +89,9 @@ extension_name = 'Demo' # 模块名
 create_makefile(extension_name) # 创建Makefile
 ```
 
-#### 安装使用
+## 安装使用
 
-###### Install
+### Install
 
 ```bash
 ruby extconf.rb
@@ -101,7 +99,7 @@ make
 sudo make install
 ```
 
-###### Usage in irb
+### Usage in irb
 
 ```irb
 require 'Demo'
@@ -109,7 +107,7 @@ include Demo
 demo_sum(1, 4) # => 5
 ```
 
-#### Reference
+## Reference
 
 * [The ruby c api](https://silverhammermba.github.io/emberb/c/)
 * [How to make extension libraries for Ruby](https://github.com/ruby/ruby/blob/trunk/doc/extension.rdoc)
