@@ -13,7 +13,7 @@ before_install:
 
 script:
   - JEKYLL_ENV=production bundle exec jekyll build
-  - bundle exec htmlproof ./_site --empty-alt-ignore --disable-external
+  - bundle exec htmlproofer ./_site --empty-alt-ignore --disable-external
 
 env:
   global:
