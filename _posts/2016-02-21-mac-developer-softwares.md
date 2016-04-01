@@ -102,6 +102,13 @@ kwmc space -t float # 不回自动分屏
 
 # 开发环境
 
+
+## api doc
+
+* dash for mac: need money
+* [zeal](https://github.com/zealdocs/zeal) for windows and linux: open source
+* [devdocs](https://github.com/Thibaut/devdocs) for all
+
 ## nodejs
 
 `brew install nodejs`
