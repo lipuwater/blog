@@ -1,3 +1,11 @@
+---
+title: "EFK log management system"
+date: 2016-04-07
+category: tech
+tags: [EFK log elasticsearch kibana fluentd]
+author: flowerwrong
+---
+
 # EFK log management system
 
 ## What's EFK?
