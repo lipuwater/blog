@@ -1,5 +1,7 @@
 # Liveneeq techblog
 
+[![Travis CI](https://travis-ci.org/onecampus/blog.svg)](https://travis-ci.org/onecampus/blog)
+
 Source code of [liveneeq's techblog](http://blog.liveneeq.com).
 
 It's powered by [Jekyll](http://jekyllrb.com/).
@@ -26,19 +28,31 @@ jekyll build
 
 # build in production mode
 JEKYLL_ENV=production jekyll build
+
+# validate generated html files
+bundle exec htmlproof ./_site --empty-alt-ignore --disable-external
 ```
 
 For more usage of `jekyll`, refer to [Jekyll Documentation](http://jekyllrb.com/docs/home/).
 
 ## Write post
 
-1. fork the repository
-1. add your author info to `_data/authors.yml`
-1. add a post file to `_posts`, names it like "2015-12-08-welcome-to-jekyll.md"
-1. commit
-1. create a pull request
+1. Fork the repository, and create a personal branch based on upstream/master (upstream here means liveneeq's official repository) to work on
+1. Add your author info to `_data/authors.yml`
+1. Add a post file to `_posts`, names it like "2015-12-08-welcome-to-jekyll.md"
+1. Commit and push to your repository
+1. Create a pull request to upstream/master
+1. (Optional) Delete the personal branch after your pull request is accepted
 
-See the former section if you want to preview the post.
+__Note:__
+
+* Only fast-forward mergable pull requests should be accepted, so [rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) may be needed
+* Squashing your commits before creating a pull request is strongly encouraged
+* Every pull request will be automatically tested by [Travis-CI](https://travis-ci.org). Of course failed pull requests won't be accepted
+
+Whenever upstream/master is updated, the blog will be automatically deployed, and you can see your post in the [blog site](http://blog.liveneeq.com).
+
+See the former section if you want to test or preview your post locally.
 
 ### Author Info
 
@@ -79,9 +93,3 @@ Any post should belong to one of the following categories: tech, design, product
 Write your post content with [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
 
 If you need to use images or other assets, save then in assets/. Create sub-directory if necessary.
-
-## Deploy
-
-It will be automatically deployed after the master branch of [onecampus/blog](https://github.com/onecampus/blog) is updated.
-
-The auto deployment makes use of [GitHub Webhooks](https://developer.github.com/webhooks/).

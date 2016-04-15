@@ -38,4 +38,24 @@ zhou:
   zhihu: ''
   lofter: ''
 
+linyunjiang:
+  avatar: 'https://avatars2.githubusercontent.com/u/8032543?v=3&s=460'
+  job: 'Ruby Programmer'
 
+jun:
+  avatar: 'https://avatars0.githubusercontent.com/u/6030422?v=3&s=460'
+  job: 'Ruby Programmer'
+  intro: 'strong man'
+
+alafighting:
+  avatar: 'https://avatars2.githubusercontent.com/u/3197744?v=3&s=460'
+  job: 'Programmer'
+  intro: 'To be, or not to be, that is the question.'
+  github: 'https://github.com/alafighting'
+
+bianjp:
+  avatar: 'https://avatars3.githubusercontent.com/u/4749277?v=3&s=460'
+  job: 'Fullstack Programmer'
+  intro: 'Big jobs usually go to the men who prove their ability to outgrow small ones.'
+  github: 'https://github.com/bianjp'
+  twitter: 'https://twitter.com/ssbianjp'

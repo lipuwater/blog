@@ -8,7 +8,6 @@ author: flowerwrong
 
 本文描述了[rack](https://github.com/rack/rack)中间件, `http_server` [thin](https://github.com/macournoyer/thin) 和我们开发的逻辑应用之间的关系。首先介绍一下整体框架，描述了一个请求到相应的具体过程。
 
-![]()
 
 首先服务器`thin`启动并监听`tcp`套接字(此处忽略其他协议)，并依据配置决定是是否使用多线程(本文不关心，以多进程为例)；当一个请求到达的时候，`thin`首先初始化`Request` 和 `Response`对象，
 接收到数据后就进行`http`协议的解析并初始化`env`对象，此对象非常重要，他是一个`hash`，包含了所有的http头部解析和http数据，然后把该`hash`传递给我们的应用，应用处理后返回`[status, headers, body]`的形式。

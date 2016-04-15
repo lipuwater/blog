@@ -47,9 +47,9 @@ sudo wireshark
 ```
 
 ## [janus(vim)](https://github.com/carlhuda/janus)
-## google-chrome: install with brew
-## sourcetree: install with brew
-## shadowsocks-libev: install brew
+## google-chrome: install via brew
+## sourcetree: install via brew
+## shadowsocks-libev: install via brew
 ## 图片预览: preview不好用，使用finder替代，点选图片，然后空格键；如果不在乎几十块钱，买xee
 ## [cheatsheet](https://www.mediaatelier.com/CheatSheet/): know your short custs.
 
@@ -78,7 +78,7 @@ kwmc space -t monocle # 每个窗口都全屏
 kwmc space -t float # 不回自动分屏
 ```
 
-### [more](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
+### [more1](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
 ### [more2](https://news.ycombinator.com/item?id=10771186)
 ### [more3](https://news.ycombinator.com/item?id=8768022)
 
@@ -92,7 +92,22 @@ kwmc space -t float # 不回自动分屏
 
 `open -a Go2Shell --args config`
 
+## [glances](https://github.com/nicolargo/glances): 流量统计工具
+## [macdown](http://macdown.uranusjr.com/): MacDown is an open source Markdown editor for OSX
+## [sketch](https://www.sketchapp.com/)
+
+### [sketch-toolbox](http://sketchtoolbox.com/)
+
+## [iconjar](http://geticonjar.com/): Organize, search and use icons the easy way.
+
 # 开发环境
+
+
+## api doc
+
+* dash for mac: need money
+* [zeal](https://github.com/zealdocs/zeal) for windows and linux: open source
+* [devdocs](https://github.com/Thibaut/devdocs) for all
 
 ## nodejs
 
