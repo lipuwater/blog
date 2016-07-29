@@ -8,7 +8,8 @@ layout: default
 
 {% assign posts = site.tags[page.tag] %}
 <ul class="post-list">
-  {% for post in posts | sort: date %}
+  {% assign sorted_posts = posts | sort: date | reverse %}
+  {% for post in sorted_posts %}
     <li>
       <h2>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
