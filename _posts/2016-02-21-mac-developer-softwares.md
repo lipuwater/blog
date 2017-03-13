@@ -47,6 +47,7 @@ sudo wireshark
 ```
 
 ## [janus(vim)](https://github.com/carlhuda/janus)
+## [caffeine](http://lightheadsw.com/caffeine/) or [newmarcel/KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake)
 ## google-chrome: install via brew
 ## sourcetree: install via brew
 ## shadowsocks-libev: install via brew
