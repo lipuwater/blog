@@ -49,6 +49,7 @@ sudo wireshark
 ## [janus(vim)](https://github.com/carlhuda/janus)
 ## [caffeine](http://lightheadsw.com/caffeine/) or [newmarcel/KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake)
 ## google-chrome: install via brew
+## [robomongo](https://robomongo.org/): mongodb management
 ## sourcetree: install via brew
 ## shadowsocks-libev: install via brew
 ## 图片预览: preview不好用，使用finder替代，点选图片，然后空格键；如果不在乎几十块钱，买xee
