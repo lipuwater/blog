@@ -52,7 +52,7 @@ exclude:
   - autoprefixer.yml
   - vendor  # Travis-CI generated directory
 
-gems:
+plugins:
   - jekyll-assets
 
 assets:
