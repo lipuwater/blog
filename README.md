@@ -1,8 +1,8 @@
-# Liveneeq techblog
+# Lipuwater techblog
 
 [![Travis CI](https://travis-ci.org/onecampus/blog.svg)](https://travis-ci.org/onecampus/blog)
 
-Source code of [liveneeq's techblog](http://blog.liveneeq.com).
+Source code of [lipuwater's techblog](http://blog.lipuwater.com).
 
 It's powered by [Jekyll](http://jekyllrb.com/).
 
@@ -10,11 +10,11 @@ It's powered by [Jekyll](http://jekyllrb.com/).
 
 Requirement:
 
-* Ruby 2.2+
-* Bundler: 1.10+
+* Ruby 2.4+
+* Bundler: 1.16+
 
 ```shell
-git clone https://github.com/onecampus/blog
+git clone git@github.com:lipuwater/blog.git
 cd blog
 
 # install dependencies
